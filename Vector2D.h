@@ -12,13 +12,13 @@ public:
 	float x;
 	float y;
 	float z;
-	Vector2D operator+(Vector2D &);
-	Vector2D operator-(Vector2D &);
-	Vector2D operator*(float);
-	float operator*(Vector2D &);
+	Vector2D operator + (const Vector2D &)const;
+	Vector2D operator - (const Vector2D &)const;
+	Vector2D operator * (float)const;
+	float operator * (const Vector2D &)const;
 	float modulo();
 	float argumento();
-	Vector2D unitario();
+	Vector2D Unitario();
 };
 
 #endif
