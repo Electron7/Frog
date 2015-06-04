@@ -38,7 +38,6 @@ void Mundo::Mover()
 	bool x = Interaccion::Rebote(rana, plataforma,izquierda,derecha,atras,recto);
 	y = Interaccion::Llegada(rana, plataforma,recto);
 
-	//LIMITES DE LOS COCHES
 	//CREACION Y DESTRUCCION DE COCHES
 	Coche *auxiliar_coche_destruido(coches.Destruccion(plataforma));// = coches.Destruccion(plataforma);
 	if (auxiliar_coche_destruido != 0)
